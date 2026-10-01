@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "word-tile-lab"
+version = "0.1.0"
+description = "Calibrated word-tile duel levels, a four-agent level team over MCP, and an eval for the agent that guards what players see."
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "mcp>=2.2,<3",        # MCP Python SDK 2.x (MCPServer); the server and its stdio test
+    "wordfreq>=3.1",      # word frequencies; only needed until data/.cache/zipf.tsv is built
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+# The repo root also holds tests/, experiments/, docs/ and data/ - only these are packages.
+include = ["wordtiles*", "evals*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

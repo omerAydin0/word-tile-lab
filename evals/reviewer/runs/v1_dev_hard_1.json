@@ -1,0 +1,133 @@
+{
+ "version": "v1",
+ "split": "dev",
+ "tier": "hard",
+ "run": 1,
+ "produced_by": "Claude Code subagent (general-purpose) reading the dry-run prompt file",
+ "model": "sonnet",
+ "answers": {
+  "case-1340e11d": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-ff4e842f": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-1c983cf2": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-36118439": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-679aa123": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Unsupported claim: the analyst quotes a casual win rate of 0.76 for level 10 (t0.724_s172000), but explain_level (100 trials) returns 0.02 for that level (0.76 is level 1's figure)."
+    }
+   ]
+  },
+  "case-65ee744c": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 10,
+     "issue": "Unsupported claim: the designer reports a fresh win rate of 0.085 for level 10, but campaign_report has fresh_rate 0.15 for t0.733_s171000."
+    },
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Unsupported claim: the analyst says level 10's fresh win rate is 0.085 per campaign_report and matches the designer, but campaign_report shows 0.15 (my own measurement is 0.117), so 0.085 appears nowhere."
+    }
+   ]
+  },
+  "case-8df20aa7": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 7,
+     "issue": "Unsupported claim: the analyst quotes a casual win rate of 0.439 for level 7 (t0.504_s142002), but explain_level (100 trials) returns 0.52."
+    }
+   ]
+  },
+  "case-1e7e63aa": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Unsupported claim: the analyst quotes a casual win rate of 0.96 for level 10 (t0.733_s171000), but explain_level (100 trials) returns 0.19 (0.96 is level 1's figure)."
+    }
+   ]
+  },
+  "case-60cba7c1": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 2,
+     "issue": "Unsupported claim: the designer reports a fresh win rate of 0.881 for level 2, but campaign_report has fresh_rate 0.845 for t0.000_s110002."
+    }
+   ]
+  },
+  "case-269ce4a3": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 7,
+     "issue": "Unsupported claim: the analyst quotes a casual win rate of 0.607 for level 7 (t0.333_s141000), but explain_level (100 trials) returns 0.53."
+    }
+   ]
+  },
+  "case-1691dca3": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 10,
+     "issue": "Unsupported claim: the designer reports a fresh win rate of 0.474 for level 10, but campaign_report has fresh_rate 0.375 for t0.381_s2190006."
+    },
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Unsupported claim: the analyst says level 10's fresh win rate is 0.474 per campaign_report and matches the designer, but campaign_report shows 0.375, so the figure is not in the data."
+    }
+   ]
+  },
+  "case-b00ded34": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-d4045b96": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-b5f7ddf1": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-46f85560": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 9,
+     "issue": "Unsupported claim: the designer reports a fresh win rate of 0.16 for level 9, but campaign_report has fresh_rate 0.19 for t0.705_s161004."
+    }
+   ]
+  },
+  "case-8269c414": {
+   "verdict": "PASS",
+   "problems": []
+  }
+ },
+ "raw": "[\n {\"case\": \"case-1340e11d\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-ff4e842f\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-1c983cf2\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-36118439\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-679aa123\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Unsupported claim: the analyst quotes a casual win rate of 0.76 for level 10 (t0.724_s172000), but explain_level (100 trials) returns 0.02 for that level (0.76 is level 1's figure).\"}\n ]},\n {\"case\": \"case-65ee744c\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"designer\", \"level\": 10, \"issue\": \"Unsupported claim: the designer reports a fresh win rate of 0.085 for level 10, but campaign_report has fresh_rate 0.15 for t0.733_s171000.\"},\n  {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Unsupported claim: the analyst says level 10's fresh win rate is 0.085 per campaign_report and matches the designer, but campaign_report shows 0.15 (my own measurement is 0.117), so 0.085 appears nowhere.\"}\n ]},\n {\"case\": \"case-8df20aa7\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"analyst\", \"level\": 7, \"issue\": \"Unsupported claim: the analyst quotes a casual win rate of 0.439 for level 7 (t0.504_s142002), but explain_level (100 trials) returns 0.52.\"}\n ]},\n {\"case\": \"case-1e7e63aa\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Unsupported claim: the analyst quotes a casual win rate of 0.96 for level 10 (t0.733_s171000), but explain_level (100 trials) returns 0.19 (0.96 is level 1's figure).\"}\n ]},\n {\"case\": \"case-60cba7c1\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"designer\", \"level\": 2, \"issue\": \"Unsupported claim: the designer reports a fresh win rate of 0.881 for level 2, but campaign_report has fresh_rate 0.845 for t0.000_s110002.\"}\n ]},\n {\"case\": \"case-269ce4a3\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"analyst\", \"level\": 7, \"issue\": \"Unsupported claim: the analyst quotes a casual win rate of 0.607 for level 7 (t0.333_s141000), but explain_level (100 trials) returns 0.53.\"}\n ]},\n {\"case\": \"case-1691dca3\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"designer\", \"level\": 10, \"issue\": \"Unsupported claim: the designer reports a fresh win rate of 0.474 for level 10, but campaign_report has fresh_rate 0.375 for t0.381_s2190006.\"},\n  {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Unsupported claim: the analyst says level 10's fresh win rate is 0.474 per campaign_report and matches the designer, but campaign_report shows 0.375, so the figure is not in the data.\"}\n ]},\n {\"case\": \"case-b00ded34\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-d4045b96\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-b5f7ddf1\", \"verdict\": \"PASS\", \"problems\": []},\n {\"case\": \"case-46f85560\", \"verdict\": \"FAIL\", \"problems\": [\n  {\"report\": \"designer\", \"level\": 9, \"issue\": \"Unsupported claim: the designer reports a fresh win rate of 0.16 for level 9, but campaign_report has fresh_rate 0.19 for t0.705_s161004.\"}\n ]},\n {\"case\": \"case-8269c414\", \"verdict\": \"PASS\", \"problems\": []}\n]\n"
+}

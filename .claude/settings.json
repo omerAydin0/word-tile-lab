@@ -1,0 +1,34 @@
+{
+  "enabledMcpjsonServers": ["wordtiles"],
+  "permissions": {
+    "allow": [
+      "mcp__wordtiles__get_level",
+      "mcp__wordtiles__measure_level",
+      "mcp__wordtiles__explain_level",
+      "mcp__wordtiles__campaign_report",
+      "mcp__wordtiles__review_queue",
+      "mcp__wordtiles__check_words",
+      "mcp__wordtiles__release_check",
+      "mcp__wordtiles__read_report",
+      "mcp__wordtiles__generate_level",
+      "mcp__wordtiles__calibrate_campaign",
+      "mcp__wordtiles__regenerate_level",
+      "mcp__wordtiles__render_level",
+      "mcp__wordtiles__submit_report"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__wordtiles__.*",
+        "hooks": [{ "type": "command", "command": "python -m wordtiles.audit" }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__wordtiles__.*",
+        "hooks": [{ "type": "command", "command": "python -m wordtiles.audit" }]
+      }
+    ]
+  }
+}

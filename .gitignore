@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# wordfreq-derived data is CC BY-SA; it is rebuilt locally and never committed.
+data/.cache/
+out/
+*.egg-info/
+
+# Working notes kept on my machine, not in the repo.
+docs/GUNLUK.md
+docs/HIKAYE.md

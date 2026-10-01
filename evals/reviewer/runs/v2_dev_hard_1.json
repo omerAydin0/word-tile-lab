@@ -1,0 +1,133 @@
+{
+ "version": "v2",
+ "split": "dev",
+ "tier": "hard",
+ "run": 1,
+ "produced_by": "Claude Code subagent (general-purpose) reading the dry-run prompt file",
+ "model": "sonnet",
+ "answers": {
+  "case-1340e11d": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-ff4e842f": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-1c983cf2": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-36118439": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-679aa123": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Analyst quotes a casual win rate of 0.76 for level 10 (t0.724_s172000) but explain_level (100 trials) returns 0.02 (CI 0.006-0.07); 0.76 is level 1's rate, so the figure is unsupported and misdescribes the hardest level."
+    }
+   ]
+  },
+  "case-65ee744c": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 10,
+     "issue": "Designer reports L10 fresh win rate 0.085 but campaign_report fresh_rate for L10 (t0.733_s171000) is 0.15; the figure is unsupported/stale."
+    },
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Analyst claims level 10's fresh win rate is 0.085 per campaign_report and matches the designer, but campaign_report says 0.15, so the claim and the 'matching' statement are false (repeats the designer's wrong number)."
+    }
+   ]
+  },
+  "case-8df20aa7": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 7,
+     "issue": "Analyst quotes casual win rate 0.439 for level 7 (t0.504_s142002) but explain_level (100 trials) returns 0.52 (CI 0.423-0.615); the number does not reproduce."
+    }
+   ]
+  },
+  "case-1e7e63aa": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Analyst quotes casual win rate 0.96 for level 10 (t0.733_s171000) but explain_level (100 trials) returns 0.19 (CI 0.125-0.278); 0.96 is level 1's rate, so the figure is unsupported."
+    }
+   ]
+  },
+  "case-60cba7c1": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 2,
+     "issue": "Designer lists L2 fresh win rate 0.881 but campaign_report fresh_rate for L2 (t0.000_s110002) is 0.845; the figure is unsupported/stale."
+    }
+   ]
+  },
+  "case-269ce4a3": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 7,
+     "issue": "Analyst quotes casual win rate 0.607 for level 7 (t0.333_s141000) but explain_level (100 trials) returns 0.53 (CI 0.433-0.625); the number does not reproduce."
+    }
+   ]
+  },
+  "case-1691dca3": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 10,
+     "issue": "Designer reports L10 fresh win rate 0.474 but campaign_report fresh_rate for L10 (t0.381_s2190006) is 0.375; the figure is unsupported/stale (my 0.443 measurement does not make 0.474 the recorded fresh rate)."
+    },
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Analyst states level 10's fresh win rate is 0.474 (campaign_report) matching the designer, but campaign_report says 0.375, so the claim is false."
+    }
+   ]
+  },
+  "case-b00ded34": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-d4045b96": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-b5f7ddf1": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-46f85560": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 9,
+     "issue": "Designer lists L9 fresh win rate 0.16 but campaign_report fresh_rate for L9 (t0.705_s161004) is 0.19; the figure is unsupported/stale."
+    }
+   ]
+  },
+  "case-8269c414": {
+   "verdict": "PASS",
+   "problems": []
+  }
+ },
+ "raw": "[\n{\"case\": \"case-1340e11d\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-ff4e842f\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-1c983cf2\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-36118439\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-679aa123\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Analyst quotes a casual win rate of 0.76 for level 10 (t0.724_s172000) but explain_level (100 trials) returns 0.02 (CI 0.006-0.07); 0.76 is level 1's rate, so the figure is unsupported and misdescribes the hardest level.\"}\n]},\n{\"case\": \"case-65ee744c\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"designer\", \"level\": 10, \"issue\": \"Designer reports L10 fresh win rate 0.085 but campaign_report fresh_rate for L10 (t0.733_s171000) is 0.15; the figure is unsupported/stale.\"},\n {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Analyst claims level 10's fresh win rate is 0.085 per campaign_report and matches the designer, but campaign_report says 0.15, so the claim and the 'matching' statement are false (repeats the designer's wrong number).\"}\n]},\n{\"case\": \"case-8df20aa7\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"analyst\", \"level\": 7, \"issue\": \"Analyst quotes casual win rate 0.439 for level 7 (t0.504_s142002) but explain_level (100 trials) returns 0.52 (CI 0.423-0.615); the number does not reproduce.\"}\n]},\n{\"case\": \"case-1e7e63aa\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Analyst quotes casual win rate 0.96 for level 10 (t0.733_s171000) but explain_level (100 trials) returns 0.19 (CI 0.125-0.278); 0.96 is level 1's rate, so the figure is unsupported.\"}\n]},\n{\"case\": \"case-60cba7c1\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"designer\", \"level\": 2, \"issue\": \"Designer lists L2 fresh win rate 0.881 but campaign_report fresh_rate for L2 (t0.000_s110002) is 0.845; the figure is unsupported/stale.\"}\n]},\n{\"case\": \"case-269ce4a3\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"analyst\", \"level\": 7, \"issue\": \"Analyst quotes casual win rate 0.607 for level 7 (t0.333_s141000) but explain_level (100 trials) returns 0.53 (CI 0.433-0.625); the number does not reproduce.\"}\n]},\n{\"case\": \"case-1691dca3\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"designer\", \"level\": 10, \"issue\": \"Designer reports L10 fresh win rate 0.474 but campaign_report fresh_rate for L10 (t0.381_s2190006) is 0.375; the figure is unsupported/stale (my 0.443 measurement does not make 0.474 the recorded fresh rate).\"},\n {\"report\": \"analyst\", \"level\": 10, \"issue\": \"Analyst states level 10's fresh win rate is 0.474 (campaign_report) matching the designer, but campaign_report says 0.375, so the claim is false.\"}\n]},\n{\"case\": \"case-b00ded34\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-d4045b96\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-b5f7ddf1\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-46f85560\", \"verdict\": \"FAIL\", \"problems\": [\n {\"report\": \"designer\", \"level\": 9, \"issue\": \"Designer lists L9 fresh win rate 0.16 but campaign_report fresh_rate for L9 (t0.705_s161004) is 0.19; the figure is unsupported/stale.\"}\n]},\n{\"case\": \"case-8269c414\", \"verdict\": \"PASS\", \"problems\": []}\n]\n"
+}

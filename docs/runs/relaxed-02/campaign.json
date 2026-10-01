@@ -1,0 +1,151 @@
+{
+  "name": "relaxed-02",
+  "base_seed": 90000,
+  "chapter_targets": [
+    0.92,
+    0.85,
+    0.78,
+    0.7,
+    0.55,
+    0.8,
+    0.7,
+    0.66,
+    0.5,
+    0.5
+  ],
+  "levels": [
+    {
+      "index": 1,
+      "level_id": "t0.000_s100001",
+      "target": [
+        0.82,
+        1.0
+      ],
+      "calibration_rate": 1.0,
+      "calibration_trials": 20,
+      "fresh_rate": 1.0,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 2,
+      "level_id": "t0.333_s110003",
+      "target": [
+        0.75,
+        0.95
+      ],
+      "calibration_rate": 0.76,
+      "calibration_trials": 200,
+      "fresh_rate": 0.785,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 3,
+      "level_id": "t0.297_s120003",
+      "target": [
+        0.68,
+        0.88
+      ],
+      "calibration_rate": 0.79,
+      "calibration_trials": 100,
+      "fresh_rate": 0.88,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 4,
+      "level_id": "t0.345_s130002",
+      "target": [
+        0.6,
+        0.8
+      ],
+      "calibration_rate": 0.717,
+      "calibration_trials": 120,
+      "fresh_rate": 0.675,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 5,
+      "level_id": "t0.233_s3140014",
+      "target": [
+        0.45,
+        0.65
+      ],
+      "calibration_rate": 0.485,
+      "calibration_trials": 200,
+      "fresh_rate": 0.53,
+      "fresh_trials": 200,
+      "fresh_in_band": true,
+      "regenerations": 3
+    },
+    {
+      "index": 6,
+      "level_id": "t0.180_s150000",
+      "target": [
+        0.7,
+        0.9
+      ],
+      "calibration_rate": 0.79,
+      "calibration_trials": 100,
+      "fresh_rate": 0.75,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 7,
+      "level_id": "t0.270_s2160006",
+      "target": [
+        0.6,
+        0.8
+      ],
+      "calibration_rate": 0.625,
+      "calibration_trials": 200,
+      "fresh_rate": 0.68,
+      "fresh_trials": 200,
+      "fresh_in_band": true,
+      "regenerations": 2
+    },
+    {
+      "index": 8,
+      "level_id": "t0.306_s170000",
+      "target": [
+        0.56,
+        0.76
+      ],
+      "calibration_rate": 0.63,
+      "calibration_trials": 200,
+      "fresh_rate": 0.6,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 9,
+      "level_id": "t0.338_s180004",
+      "target": [
+        0.4,
+        0.6
+      ],
+      "calibration_rate": 0.4,
+      "calibration_trials": 200,
+      "fresh_rate": 0.455,
+      "fresh_trials": 200,
+      "fresh_in_band": true
+    },
+    {
+      "index": 10,
+      "level_id": "t0.450_s1190003",
+      "target": [
+        0.4,
+        0.6
+      ],
+      "calibration_rate": 0.545,
+      "calibration_trials": 200,
+      "fresh_rate": 0.56,
+      "fresh_trials": 200,
+      "fresh_in_band": true,
+      "regenerations": 1
+    }
+  ]
+}

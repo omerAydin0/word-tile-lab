@@ -1,0 +1,176 @@
+{
+ "version": "v1",
+ "split": "dev",
+ "run": 2,
+ "produced_by": "Claude Code subagent (general-purpose) reading the dry-run prompt file",
+ "model": "sonnet",
+ "answers": {
+  "case-09186bc7": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "curator",
+     "level": null,
+     "issue": "Unsupported claim: the curator report says 'blocked 5' (and 52 approved of 56 reviewed), but the record_word_decisions log shows only 4 blocks (CUM, DOPE, MARTIN, AMAZON); 52 + 4 = 56."
+    }
+   ]
+  },
+  "case-3bd97ca1": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-762d75ce": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 4,
+     "issue": "Unsupported claim: designer quotes fresh win rate 0.605 for L4, but campaign_report has fresh_rate 0.695 for level 4 (t0.218_s130002)."
+    }
+   ]
+  },
+  "case-aa39f256": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "curator",
+     "level": null,
+     "issue": "Unsupported claim: the curator report says 'blocked 5' (and 52 approved of 56 reviewed), but the record_word_decisions log shows only 4 blocks (CUM, DOPE, MARTIN, AMAZON); 52 + 4 = 56."
+    }
+   ]
+  },
+  "case-708a2b7f": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 8,
+     "issue": "Designer reports 10/10 in band with L8 fresh rate 0.375, but campaign_report has L8 (t0.618_s152002) fresh_rate 0.141, below its target [0.18, 0.38] (fresh_in_band false); 'Levels still out of band: none' is false."
+    },
+    {
+     "report": "release_check",
+     "level": 8,
+     "issue": "release_check shows in_band 9/10 (L8 fresh_rate 0.141 is out of band) yet lists no problems; the out-of-band level is not resolved, so this cannot be a PASS."
+    }
+   ]
+  },
+  "case-0213316b": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "curator",
+     "level": 3,
+     "issue": "Unsupported claim: the curator report says it blocked LOT ('vulgar slang sense') and approved 51, but the decision log shows 52 approved and only 4 blocks (CUM, DOPE, MARTIN, AMAZON), and campaign_report still lists LOT as approved in level 3 (t0.067_s120000)."
+    }
+   ]
+  },
+  "case-7947454d": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Unsupported claim: analyst quotes casual win rate 0.53 for level 10, but explain_level (100 trials) returns 0.4 (and my measure_level gave 0.443)."
+    }
+   ]
+  },
+  "case-a96b5cf4": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Stale analysis: analyst analysed level_id t0.381_s2190003, but the campaign now holds t0.381_s2190006 at level 10."
+    }
+   ]
+  },
+  "case-64526fce": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Stale analysis: analyst analysed level_id t0.381_s2190003, but the campaign now holds t0.381_s2190006 at level 10."
+    }
+   ]
+  },
+  "case-b5d4d452": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-13c1506c": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 2,
+     "issue": "Designer reports 10/10 in band and L2 fresh rate 0.845, but campaign_report has L2 (t0.000_s110002) fresh_rate 0.707, below its target [0.75, 0.95] (fresh_in_band false)."
+    },
+    {
+     "report": "release_check",
+     "level": 2,
+     "issue": "release_check shows in_band 9/10 (L2 out of band) yet lists no problems; the out-of-band level is not resolved, so this cannot be a PASS."
+    }
+   ]
+  },
+  "case-0133f640": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 10,
+     "issue": "Unsupported claim: analyst quotes casual win rate 0.295 for level 10, but explain_level (100 trials) returns 0.4 (and my measure_level gave 0.443)."
+    }
+   ]
+  },
+  "case-27dbfe91": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 2,
+     "issue": "Unsupported claim: analyst says players needed 2.3 attempts on average for level 2 citing explain_level, but explain_level was not run for level 2 and returns no attempts metric; the figure cannot be found or reproduced."
+    }
+   ]
+  },
+  "case-78c75118": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "analyst",
+     "level": 7,
+     "issue": "Unsupported claim: analyst says players needed 3.8 attempts on average for level 7 citing explain_level, but explain_level was not run for level 7 and returns no attempts metric; the figure cannot be found or reproduced."
+    }
+   ]
+  },
+  "case-d27c744f": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "curator",
+     "level": 1,
+     "issue": "Unsupported claim: the curator report says it blocked DUE ('vulgar slang sense') and approved 71, but the decision log shows 72 approved and only 2 blocks (FATTY, THERES), and campaign_report still lists DUE as approved in level 1."
+    }
+   ]
+  },
+  "case-dd50a07f": {
+   "verdict": "FAIL",
+   "problems": [
+    {
+     "report": "designer",
+     "level": 4,
+     "issue": "Unsupported claim: designer quotes fresh win rate 0.601 for L4, but campaign_report has fresh_rate 0.5 for level 4 (t0.381_s112000)."
+    }
+   ]
+  },
+  "case-f418bf77": {
+   "verdict": "PASS",
+   "problems": []
+  },
+  "case-3c73adb2": {
+   "verdict": "PASS",
+   "problems": []
+  }
+ },
+ "raw": "[\n{\"case\": \"case-09186bc7\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"curator\", \"level\": null, \"issue\": \"Unsupported claim: the curator report says 'blocked 5' (and 52 approved of 56 reviewed), but the record_word_decisions log shows only 4 blocks (CUM, DOPE, MARTIN, AMAZON); 52 + 4 = 56.\"}]},\n{\"case\": \"case-3bd97ca1\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-762d75ce\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"designer\", \"level\": 4, \"issue\": \"Unsupported claim: designer quotes fresh win rate 0.605 for L4, but campaign_report has fresh_rate 0.695 for level 4 (t0.218_s130002).\"}]},\n{\"case\": \"case-aa39f256\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"curator\", \"level\": null, \"issue\": \"Unsupported claim: the curator report says 'blocked 5' (and 52 approved of 56 reviewed), but the record_word_decisions log shows only 4 blocks (CUM, DOPE, MARTIN, AMAZON); 52 + 4 = 56.\"}]},\n{\"case\": \"case-708a2b7f\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"designer\", \"level\": 8, \"issue\": \"Designer reports 10/10 in band with L8 fresh rate 0.375, but campaign_report has L8 (t0.618_s152002) fresh_rate 0.141, below its target [0.18, 0.38] (fresh_in_band false); 'Levels still out of band: none' is false.\"}, {\"report\": \"release_check\", \"level\": 8, \"issue\": \"release_check shows in_band 9/10 (L8 fresh_rate 0.141 is out of band) yet lists no problems; the out-of-band level is not resolved, so this cannot be a PASS.\"}]},\n{\"case\": \"case-0213316b\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"curator\", \"level\": 3, \"issue\": \"Unsupported claim: the curator report says it blocked LOT ('vulgar slang sense') and approved 51, but the decision log shows 52 approved and only 4 blocks (CUM, DOPE, MARTIN, AMAZON), and campaign_report still lists LOT as approved in level 3 (t0.067_s120000).\"}]},\n{\"case\": \"case-7947454d\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"analyst\", \"level\": 10, \"issue\": \"Unsupported claim: analyst quotes casual win rate 0.53 for level 10, but explain_level (100 trials) returns 0.4 (and my measure_level gave 0.443).\"}]},\n{\"case\": \"case-a96b5cf4\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"analyst\", \"level\": 10, \"issue\": \"Stale analysis: analyst analysed level_id t0.381_s2190003, but the campaign now holds t0.381_s2190006 at level 10.\"}]},\n{\"case\": \"case-64526fce\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"analyst\", \"level\": 10, \"issue\": \"Stale analysis: analyst analysed level_id t0.381_s2190003, but the campaign now holds t0.381_s2190006 at level 10.\"}]},\n{\"case\": \"case-b5d4d452\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-13c1506c\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"designer\", \"level\": 2, \"issue\": \"Designer reports 10/10 in band and L2 fresh rate 0.845, but campaign_report has L2 (t0.000_s110002) fresh_rate 0.707, below its target [0.75, 0.95] (fresh_in_band false).\"}, {\"report\": \"release_check\", \"level\": 2, \"issue\": \"release_check shows in_band 9/10 (L2 out of band) yet lists no problems; the out-of-band level is not resolved, so this cannot be a PASS.\"}]},\n{\"case\": \"case-0133f640\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"analyst\", \"level\": 10, \"issue\": \"Unsupported claim: analyst quotes casual win rate 0.295 for level 10, but explain_level (100 trials) returns 0.4 (and my measure_level gave 0.443).\"}]},\n{\"case\": \"case-27dbfe91\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"analyst\", \"level\": 2, \"issue\": \"Unsupported claim: analyst says players needed 2.3 attempts on average for level 2 citing explain_level, but explain_level was not run for level 2 and returns no attempts metric; the figure cannot be found or reproduced.\"}]},\n{\"case\": \"case-78c75118\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"analyst\", \"level\": 7, \"issue\": \"Unsupported claim: analyst says players needed 3.8 attempts on average for level 7 citing explain_level, but explain_level was not run for level 7 and returns no attempts metric; the figure cannot be found or reproduced.\"}]},\n{\"case\": \"case-d27c744f\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"curator\", \"level\": 1, \"issue\": \"Unsupported claim: the curator report says it blocked DUE ('vulgar slang sense') and approved 71, but the decision log shows 72 approved and only 2 blocks (FATTY, THERES), and campaign_report still lists DUE as approved in level 1.\"}]},\n{\"case\": \"case-dd50a07f\", \"verdict\": \"FAIL\", \"problems\": [{\"report\": \"designer\", \"level\": 4, \"issue\": \"Unsupported claim: designer quotes fresh win rate 0.601 for L4, but campaign_report has fresh_rate 0.5 for level 4 (t0.381_s112000).\"}]},\n{\"case\": \"case-f418bf77\", \"verdict\": \"PASS\", \"problems\": []},\n{\"case\": \"case-3c73adb2\", \"verdict\": \"PASS\", \"problems\": []}\n]\n"
+}

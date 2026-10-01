@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wordtiles": {
+      "command": "python",
+      "args": ["-m", "wordtiles.server"]
+    }
+  }
+}
